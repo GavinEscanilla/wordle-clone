@@ -1,14 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Inputs from './inputs'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App bg-red-900 h-screen">
-      Boiler plate
+    <div className="App bg-gray-100 h-screen flex items-center flex-col w-screen">
+      <h1 className="text-8xl font-bold text-center">
+        Wordle
+        <Inputs />
+      </h1>
     </div>
   )
 }
